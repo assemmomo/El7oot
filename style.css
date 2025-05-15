@@ -189,15 +189,19 @@ footer{
     }
 }
 .closeLocation1{
-    top: 30px;
-    left: 30px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover i{
+        color: red;
+    }
     & i{
         color: white;
         font-size: 35px;
-        cursor: pointer;
-        &:hover{
-            color: red;
-        }
     }
 }
 .locationPage2{
@@ -284,8 +288,10 @@ footer{
         overflow-x: hidden !important;
     }
     .closeLocation1{
-        top: 10px;
-        left: 10px;
+        width: 100px;
+        height: 50px;
+        border: 2px solid rgba(255, 255, 255, 0.534);
+        position: relative !important;
         z-index: 999;
         & i{
             color: white;
