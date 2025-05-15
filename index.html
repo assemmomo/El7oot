@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El7oOot net cafe</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="proContainer vw-100 position-relative">
+        <nav class="w-100 d-flex justify-content-around">
+          <div class="leftDiv"><img src="./imgs/logo.png" alt=""></div>
+          <div class="centerDiv">
+            <ul class="w-100 d-flex justify-content-around align-items-center">
+              <li><a href="#section1">Home</a></li>
+              <li><a href="#section2">locations</a></li>
+              <li><a href="#footer">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="rightDiv justify-content-end">
+            <div><i style="font-size: 30px; color: white; cursor: pointer;" class="fa-solid fa-bars"></i></div>
+          </div>
+        </nav>
+
+        <section id="section1" class="section1 w-100 d-flex justify-content-center align-items-center flex-column position-relative">
+            <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+                <img src="./imgs/logo.png" alt="Logo" class="firstSecLogo">
+                <h1 class="text-center">El7oOot net cafe</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </div>
+            <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+                <a style="color: white;" href="#section2"><button class="btn btn-primary">locations</button></a>
+            </div>
+            <div class="sec1Bg"></div>
+            <div class="sec2Bg"></div>
+
+        </section>
+
+        <section id="section2" class="section2 d-flex justify-content-around align-items-center flex-column">
+            <h1 class="mainColor fs-1">Locations</h1>
+            <div class="locations w-75 h-75 d-flex justify-content-center align-items-center flex-wrap gap-5">
+              <div>
+                <img src="./imgs/24.jpeg" alt="">
+                <h1 class="text-center">فرع شارع 30 ارض الفضالي</h1>
+                <button class="btn1 btn" style="padding: 10px 20px;">details</button>
+              </div>
+              <div>
+                <img src="./imgs/myame 4.jpeg" alt="">
+                <h1 class="text-center">فرع ميامي الاكاديمية</h1>
+                <button class="btn2 btn" style="padding: 10px 20px;">details</button>
+              </div>
+              <div>
+                <img src="./imgs/15 4.jpeg" alt="">
+                <h1 class="text-center">فرع سيدي بشر شارع 15</h1>
+                <button class="btn3 btn" style="padding: 10px 20px;">details</button>
+              </div>
+            </div>
+        </section>
+
+        <footer id="footer" class="w-100 d-flex justify-content-between align-items-center position-relative">
+          <div class="footerImg w-50 h-100 d-flex justify-content-start align-items-center">
+            <img src="./imgs/logo.png" alt="">
+          </div>
+          <div class="w-50 d-flex justify-content-center align-items-center flex-column gap-2">
+            <h1 class="text-white fs-4">Owner : shaher</h1>
+            <div class="links d-flex justify-content-around align-items-center">
+              <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="text-white">All rights reserved &copy; 2025</p>
+          </div>
+          <h4 class="position-absolute">Created by : <a target="_blank" href="https://assemmomo.github.io/Assem-Portfolio/">Assem Mohamed</a></h4>
+        </footer>
+
+
+        <div class="locationPage1 vw-100 vh-100 position-fixed d-flex flex-column justify-content-around align-items-center">
+          <div><img class="locationPageImg" src="./imgs/24.jpeg" alt=""></div>
+          <div class="d-flex flex-column justify-content-around align-items-center gap-2">
+            <h2>location</h2>
+            <h5 class="locationPageL">شارع 24 متفرع من شارع 30 القاهرة</h5>
+            <a target="_blank" class="locationPageLink fs-2" href="#">Google maps</a>
+          </div>
+          <div class="d-flex flex-column justify-content-around align-items-center gap-2">
+            <h2>PC details</h2>
+            <div class="d-flex flex-column justify-content-around align-items-center gap-2">
+              <h5>CPU : i3 12400f</h5>
+              <h5>Mb : h610m</h5>
+              <h5>GPU : RX 590</h5>
+              <h5>RAM : 16GB</h5>
+              <h5>Monitor : 24 inch 165 hz</h5>
+              <h5 class="pcNums">number of pc : 50</h5>
+          </div>
+          <div class="closeLocation1 position-absolute">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
