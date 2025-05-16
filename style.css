@@ -1,302 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none !important;
-}
-:root{
-    --mainColor--:rgb(35, 117, 150);
-    --darkColor--:rgb(22, 22, 24);
-}
-body{
-    overflow-x: hidden;
-}
-.mainColor{
-    color: var(--mainColor--);
-}
-.proContainer{
-    height: fit-content;
-    background-color: var(--darkColor--);
-}
-nav{
-    height: 70px;
-    background-color: transparent;
-    & div{
-        width: 25%;
-        height: 100%;
-        /* background-color: blue; */
-        align-items: center;
-        display: flex;
-    }
-    & .leftDiv img{
-        width: 100px;
-        margin-top: 50px;
-    }
-    & .centerDiv ul li{
-        font-size: 20px;
-        font-weight: 600;
-        margin-top: 10px;
-        list-style: none;
-        & a{
-            color: white !important;
-            text-decoration: none;
-            &:hover{
-                color: var(--mainColor--) !important;
-            }
-        }
-    }
-}
-.centerDiv{
-    width: 50% !important;
-}
-.section1{
-    height: 90vh;
-    overflow: hidden;
-    & div h1{
-        color: var(--mainColor--);
-    }
-    & div p{
-        color: rgba(255, 255, 255, 0.575);
-    }
-}
-.section1 > div{
-    z-index: 10;
-}
-.sec1Bg{
-    position: absolute;
-    width: 80%;
-    height: 700px !important;
-    background: linear-gradient(to right, rgb(22, 22, 24) 5%,rgb(35, 117, 150)95%);
-    right: -50%;
-    top: 50%;
-    /* transform: rotate(-20deg); */
-    border-radius: 100px;
-    transform: translateY(-50%);
-    z-index: 5 !important;
-}
-.sec2Bg{
-    position: absolute;
-    width: 80%;
-    height: 700px !important;
-    background: linear-gradient(to right, rgb(35, 117, 150) 5%,rgb(22, 22, 24)95%);
-    left: -50%;
-    top: 50%;
-    /* transform: rotate(-20deg); */
-    border-radius: 100px;
-    transform: translateY(-50%);
-    z-index: 5 !important;
-}
-.firstSecLogo{
-    width: 350px;
-}
-.section2{
-    min-height: 90vh;
-    height: fit-content;
-    padding: 20px;
-    margin: 20px;
-    & h1{
-        margin-bottom: 30px;
-    }
-}
-.locations{
-    & div{
-        position: relative;
-        width: 380px;
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        border-radius: 20px;
-        transition: 0.3s;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.603);
-        &:hover{
-            transform: scale(1.05);
-            background-color: rgb(2, 0, 17);
-        }
-        & img{
-            width: 100%;
-            border-radius: 20px;
-            height: 40%;
-        }
-        & h1{
-            color: white;
-            font-size: 30px;
-            font-weight: 600;
-        }
-        & button{
-            background-color: var(--darkColor--);
-            color: white;
-            margin-bottom: 40px;
-            transition: 0.3s;
-            border: 1px solid var(--mainColor--);
-            &:hover{
-                background-color: var(--darkColor--);
-                color: white;
-                transform: scale(1.05);
-            }
-        }
-    }
-}
-footer{
-    height: 40vh;
-    border-top: 2px solid rgba(255, 255, 255, 0.534);
-    background-color: rgb(20, 17, 17);
-    & div img{
-        width: 250px;
-        margin-left: 120px;
-    }
-    & h4{
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 15px;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.575);
-    }
-}
-.links{
-    width: 280px;
-    height: 60px;
-    border: 2px solid rgba(255, 255, 255, 0.534);
-    & a i{
-        font-size: 30px;
-        color: var(--mainColor--);
-    }
-}
-.locationPage1{
-    background-color: var(--darkColor--);
-    transition: 0.3s;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -200%);
-    z-index: 10;
-    & div img{
-        width: 900px;
-        height: 400px;
-    }
-    & div{
-        & h2{
-            color: white;
-            text-decoration: underline !important;
-            font-size: 40px;
-            padding: 10px;
-        }
-        & h5{
-            color: var(--mainColor--);
-        }
-    }
-}
-.closeLocation1{
-    width: 100px;
-    height: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.534);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    &:hover i{
-        color: red;
-    }
-    & i{
-        color: white;
-        font-size: 35px;
-    }
-}
-.locationPage2{
-    background-color: var(--darkColor--);
-    transition: 0.3s;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -200%);
-    z-index: 10;
-    & div img{
-        width: 900px;
-        height: 400px;
-    }
-    & div{
-        & h2{
-            color: white;
-        }
-        & h5{
-            color: var(--mainColor--);
-        }
-    }
-}
-.closeLocation2{
-    top: 30px;
-    left: 30px;
-    & i{
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-    }
-}
-.locationPage3{
-    background-color: var(--darkColor--);
-    transition: 0.3s;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -200%);
-    z-index: 10;
-    & div img{
-        width: 900px;
-        height: 400px;
-    }
-    & div{
-        & h2{
-            color: white;
-        }
-        & h5{
-            color: var(--mainColor--);
-        }
-    }
-}
-.closeLocation3{
-    top: 30px;
-    left: 30px;
-    & i{
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-    }
-}
-.active{
-    transform: translate(-50%, -50%) !important;
-    z-index: 999;
-}
+let locationPage1 = document.querySelector(".locationPage1");
+let locationPage2 = document.querySelector(".locationPage2");
+let locationPage3 = document.querySelector(".locationPage3");
+let btn1 = document.querySelector(".btn1");
+let btn2 = document.querySelector(".btn2");
+let btn3 = document.querySelector(".btn3");
+let closeLocation1 = document.querySelector(".closeLocation1");
+let closeLocation2 = document.querySelector(".closeLocation2");
+let closeLocation3 = document.querySelector(".closeLocation3");
 
-@media (max-width:560px){
-    .leftDiv{
-        display: none;
-    }
-    .centerDiv{
-        width: 100% !important;
-    }
-}
-@media (max-width:750px){
-    footer > .footerImg{
-        display: none !important;
-    }
-    #footer{
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    body {
-        width: fit-content !important;
-        overflow-x: hidden !important;
-    }
-    .closeLocation1{
-        width: 170px;
-        height: 80px;
-        border: 2px solid rgba(255, 255, 255, 0.534);
-        position: relative !important;
-        z-index: 999;
-        & i{
-            color: white;
-            font-size: 70px;
-            cursor: pointer;
-        }
-    }
-}
+
+btn1.addEventListener("click", function () {
+    locationPage1.classList.add("active");
+    document.querySelectorAll(".slides img")[0].src="./imgs/24.jpeg";
+    document.querySelectorAll(".slides img")[1].src="./imgs/24 2.jpeg";
+    document.querySelectorAll(".slides img")[2].src="./imgs/24 3.jpeg";
+    document.querySelector(".locationPageL").innerHTML = "شارع 24 متفرع من شارع 30 القاهرة";
+    document.querySelector(".pcNums").innerHTML =  "number of pc : 50";
+    document.querySelector(".locationPageLink").href = "https://maps.app.goo.gl/GnGkRdSqQ5j7xnb18";
+});
+btn2.addEventListener("click", function () {
+    locationPage1.classList.add("active");
+    document.querySelectorAll(".slides img")[0].src="./imgs/myame 4.jpeg";
+    document.querySelectorAll(".slides img")[1].src="./imgs/myame 2.jpeg";
+    document.querySelectorAll(".slides img")[2].src="./imgs/myame 3.jpeg";
+    document.querySelector(".locationPageL").innerHTML = "ميامي الاكاديمية اول شارع يمين";
+    document.querySelector(".pcNums").innerHTML =  "number of pc : 30";
+    document.querySelector(".locationPageLink").href = "https://maps.app.goo.gl/tv1KrPGM8Zn9dk1A9";
+});
+btn3.addEventListener("click", function () {
+    locationPage1.classList.add("active");
+    document.querySelectorAll(".slides img")[0].src="./imgs/15.jpeg";
+    document.querySelectorAll(".slides img")[1].src="./imgs/15 2.jpeg";
+    document.querySelectorAll(".slides img")[2].src="./imgs/15 3.jpeg";
+    document.querySelector(".locationPageL").innerHTML = "سيدي بشر قبلي شارع 15";
+    document.querySelector(".pcNums").innerHTML =  "number of pc : 37";
+    document.querySelector(".locationPageLink").href = "https://maps.app.goo.gl/G2u8364Vk3rpr7L26";
+});
+closeLocation1.addEventListener("click", function () {
+    locationPage1.classList.remove("active");
+});
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slider .slide');
+            const prevBtn = document.querySelector('.slider .prev');
+            const nextBtn = document.querySelector('.slider .next');
+            let current = 0;
+
+            function showSlide(idx) {
+              slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === idx);
+              });
+            }
+
+            prevBtn.addEventListener('click', () => {
+              current = (current - 1 + slides.length) % slides.length;
+              showSlide(current);
+            });
+
+            nextBtn.addEventListener('click', () => {
+              current = (current + 1) % slides.length;
+              showSlide(current);
+            });
+
+            showSlide(current);
+          });
